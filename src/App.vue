@@ -1,14 +1,25 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div class="app">
+
     <router-view/>
   </div>
+
+    
+
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+import Vue from 'vue';
+
+      
+     
+    // loading
+    import { Indicator,Tabbar, TabItem,table } from 'mint-ui';
+    import 'mint-ui/lib/style.css'
+    Vue.prototype.$loading = Indicator;
+    export default {
+      name: 'App'
+    }
 </script>
 
 <style>
@@ -16,8 +27,8 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>

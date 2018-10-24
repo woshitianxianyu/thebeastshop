@@ -5,7 +5,10 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
+import axios from 'axios';
 
+Vue.prototype.$axios = axios;
+import 'mint-ui/lib/style.css'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
