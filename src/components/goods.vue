@@ -6,7 +6,7 @@
         <router-link to="/" slot="left">
             <mt-button icon="back">返回</mt-button>
         </router-link>
-        <mt-button icon="more" slot="right"></mt-button>
+        <i class="fa fa-camera-retro fa-lg"></i>
         </mt-header>
         </div>
         
@@ -205,6 +205,7 @@ export default {
         color:black;
         border-bottom:0.0625rem solid #ccc;
         left: 0;
+        height: 50px;
         top:0;
         text-align: center;
     }
@@ -212,6 +213,7 @@ export default {
         position: fixed;
         top:0;
         left: 0;
+        height: 80px;
         right: 0;
         z-index: 999;
     }
@@ -301,10 +303,19 @@ export default {
        font-weight: bold;
        font-size: 12px;
    }
-   .p-e-tit{
+   .p-detail-tit .p-e-tit,{
        font-weight:700;
        font-size: 20px;
+        text-align: center;
        color:black;
+   }
+   .p-detail-tit .p-t-tit{
+       font-size: 14px;
+       text-align: center;
+   }
+   .p-detail-tit{
+      
+       text-align: center;
    }
    .p-img img{
        width: 100%;
